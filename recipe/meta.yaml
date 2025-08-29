@@ -1,5 +1,5 @@
 {% set name = "kneebow" %}
-{% set version = "1.0.2" %}
+{% set version = "1.0.4" %}
 {% set python_min = "3.9" %}  # Updated to reflect conda-forge minimum Python version if needed.
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/kneebow-{{ version }}.tar.gz
-  sha256: 606470056c279cc9ec8655af634787b42149ba3d36d9f71a8524007eef55e618
+  sha256: 146fe65caf5c666a6b73749240b934fedeee1b38859656ae829c12ad65d18fce
 
 build:
   noarch: python
@@ -23,9 +23,9 @@ requirements:
 
   run:
     - python >={{ python_min }}
-    - numpy 
-    - matplotlib-base 
-    - scikit-learn 
+    - numpy
+    - matplotlib-base
+    - scikit-learn
 
 test:
   imports:
